@@ -6,9 +6,9 @@ class Database
 {
     // default connection
     public const DB_HOST = 'localhost';
-    public const DB_USERNAME = '';
-    public const DB_PASSWORD = '';
-    public const DB_DATABASE = '';
+    public const DB_USERNAME = 'jonathan';
+    public const DB_PASSWORD = '123';
+    public const DB_DATABASE = 'crudip';
     public const DB_DRIVER = 'mysql';
     public const DB_NUMBER = '';
 

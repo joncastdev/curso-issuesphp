@@ -8,7 +8,8 @@ use Issues\Display\Routes\Route;
 
 if (empty($_GET['controller'])&&empty($_GET['method'])) {	
 
-	Route::init();
+
+	Route::get('post', 'index', 'posts','posts');
 }
 
 

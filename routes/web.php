@@ -36,6 +36,12 @@ function routeFactory($segment,$param1,$param2,$param3) {
 
 	Route::get('welcome', 'delete', 'delete',$segment,$param1);
 
+	Route::get('post', 'index', 'posts',$segment);
+
+	Route::get('post', 'show', 'post',$segment,$param1);
+
+	Route::get('post', 'delete', 'delete',$segment,$param1);
+
 }
 
 
