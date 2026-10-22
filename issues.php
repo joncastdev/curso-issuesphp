@@ -1,0 +1,23 @@
+<?php
+
+require __DIR__.'/bootstrap/app.php';
+
+use Issues\Config\App\App;
+
+echo "Connect Database an press y / n:\n";
+echo "\n";
+echo "Type a command to begin for option y:\n";
+echo "issuesphp:make:push:migration | Creates a new migration and migrate\n";
+echo "issuesphp:drop:one:migration | Drop One migration\n";
+echo "issuesphp:db:seed:one | Insert One values\n";
+
+echo "\n";
+echo "Type a command to begin for option n:\n";
+echo "issuesphp:serve | Start a local server\n";
+echo "issuesphp:make:controller:display | Create controller and display files\n";
+
+
+$result = shell_exec(App::PATH_COMMANDS);
+
+echo $result;
+?>
